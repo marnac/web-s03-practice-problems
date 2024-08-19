@@ -17,12 +17,39 @@
       }
       */
     //ENTER YOUR CODE HERE
-
+    class Person{
+      constructor(name,age){
+        this.name=name;
+        this.age=age;
+      }
+      greet(){
+          console.log(`Hello, my name is ${this.name} and my age is ${this.age} years old`);
+        }
+    }
+   const newPerson= new Person("bob",25)
+    newPerson.greet()
     /*
     PROBLEM 2: Create a constructor function called Rectangle that takes in two parameters, width and height, and creates a new object with those properties. Add methods to the Rectangle prototype called area and perimeter that return the area and perimeter of the rectangle, respectively. Create a new instance of Rectangle and log its area and perimeter to the console.
     */
 
     //ENTER YOUR CODE HERE
+    class Rectangle{
+      constructor(width, height){
+        this.width=width;
+        this.height=height;
+      }
+      area(){
+        return this.width * this.height
+      }
+      perimeter(){
+        return (this.width + this.height) * 2
+      }
+    }
+    const newRec = new Rectangle(2,5)
+   // newRec.area()
+    //newRec.perimeter()
+    console.log("Area:", newRec.area())
+    console.log("perimeter:", newRec.perimeter())
 
     /*
    PROBLEM 3: Create a constructor function called Team that takes in two parameters, name and sport, and creates a new object with those properties. Add a method to the Team prototype called win that increases the team's number of wins by one. Add another method called loss that increases the team's number of losses by one. Create a new instance of Team and use the win and loss methods to manipulate the team's win and loss records.
