@@ -50,6 +50,37 @@
     //   }
     // })
 
+   /* Challenge: Calculate the Total Cost of Items in a Shopping Cart
+Problem Statement:
+You have a shopping cart represented as an array of objects. Each object in the array represents an item in the cart, with properties for the item's name, price, and quantity. Your task is to calculate the total cost of all items in the cart using the .forEach() method.
+
+Example:
+Given the following shopping cart array:
+
+javascript
+Copy code
+const shoppingCart = [
+  { name: "Apple", price: 0.5, quantity: 4 },
+  { name: "Banana", price: 0.3, quantity: 3 },
+  { name: "Milk", price: 1.2, quantity: 2 },
+  { name: "Bread", price: 2.0, quantity: 1 }
+];
+Your goal is to calculate the total cost of all items in the cart and print it to the console.
+
+Steps to Solve:
+Initialize a variable to hold the total cost (e.g., let totalCost = 0;).
+Use the .forEach() method to iterate over the shoppingCart array.
+For each item, multiply the price by the quantity to get the cost of that item.
+Add the cost of each item to the totalCost variable.
+After the loop, print the totalCost to the console.
+Expected Output:
+For the provided shoppingCart array, the output should be:
+
+javascript
+Copy code
+Total Cost: $5.1
+Additional Challenge (Optional):
+Modify your code to include a discount: If the total cost exceeds $10, apply a 10% discount and print the final cost after the discount.
   </script>
 
 </body>
