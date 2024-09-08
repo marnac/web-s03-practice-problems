@@ -12,7 +12,11 @@
     const numbersArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
     let count = 0;
     //ENTER YOUR CODE HERE
-
+    numbersArray.forEach((num)=>{
+      if(num%2===0){
+        count++
+      }
+    })
     console.log(`There are ${count} even numbers in the array`);
     /*
     PROBLEM 2: Given an array of strings, use the .forEach array method to convert all the strings to uppercase and add them to the uppercaseStrings array.
@@ -20,7 +24,9 @@
     const strings = ['hello', 'world', 'javascript', 'coding'];
     const uppercaseStrings = [];
     //ENTER YOUR CODE HERE
-
+    strings.forEach((str)=>{
+      uppercaseStrings.push(str.toUpperCase())
+    })
     console.log(uppercaseStrings);
     /*
    PROBLEM 3: Given an array of numbers, us the .forEach array method to remove all duplicates by only adding a number to the uniqueNumbers array if it doesn't already exist in the uniqueNumbers array.
@@ -28,16 +34,22 @@
     const duplicateNumbers = [1, 2, 3, 4, 5, 1, 2, 3, 6, 7, 8, 9, 5];
     const uniqueNumbers = [];
     //ENTER YOUR CODE HERE
-
+   duplicateNumbers.forEach((num)=>{
+    if(!uniqueNumbers.includes(num)){
+      uniqueNumbers.push(num)
+    }
+   })
     console.log(uniqueNumbers);
     /*
     PROBLEM 4: Given an array of numbers, use the .forEach array method to find the sum of all the numbers in the array
     */
-
-    const numbersToSum = [1, 2, 3, 4, 5];
-    let sum = 0;
-    //ENTER YOUR CODE HERE
-
+   const numbersToSum = [1, 2, 3, 4, 5];
+   let sum = 0;
+   //ENTER YOUR CODE HERE
+   
+   numbersToSum.forEach((num)=>{
+    sum+=num
+   })
     console.log(sum);
     /*
     PROBLEM 5 (DEBUGGING): The following commented code is supposed to print out the first three elements of an array, but it's not working. Uncomment the code and fix the issue. Check your results in the console.
