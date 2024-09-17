@@ -67,7 +67,9 @@
       },
     };
     //ENTER YOUR CODE HERE
-    const{title, director, releaseYear, first_actor.}
+    const{title, director, releaseYear, first_actor:{name:leadActor}} = movie
+    console.log(title, director, releaseYear,leadActor);
+    
     /*
     PROBLEM 5 (DEBUGGING): The code below should extract the city, state, and title properties from the object
     and assign them to variables. However, there is a bug in the code.  Fix the bug so that the code works as intended.

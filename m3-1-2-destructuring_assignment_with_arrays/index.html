@@ -11,19 +11,32 @@
     and store them in variables called first and second.
     */
     //ENTER YOUR CODE HERE
-
+    const names=["John", "Mary", "Bob"]
+    const [first, second]= names
+    console.log(first, second);
+    
     /*
     PROBLEM 2: Declare an array called numbers with the values [2, 5, 6].
     Use destructuring assignment to extract the first two elements of the array
     and store them in variables called x and y.
     */
     //ENTER YOUR CODE HERE
-
+    const numbers=[2,5,6]
+    const [x,y]= numbers
+    console.log(x,y);
+    
     /*
     PROBLEM 3: Declare an array called nums with the values [1, 2, 3, 4].
     Use the spread operator to create a new array with the first element at the end of the array.
     */
     //ENTER YOUR CODE HERE
+    const nums= [1, 2, 3, 4]
+    const [firstNum, ...theRest]= nums
+    const newNums = [...theRest, firstNum]
+    console.log(nums);
+    
+    console.log(newNums);
+    
 
     /*
     PROBLEM 4: Swap the values of the a and b variables using destructuring assignment.
@@ -31,7 +44,10 @@
     let a = 'hello';
     let b = 'world';
     //ENTER YOUR CODE HERE
-
+    [a,b]= [b, a]
+    console.log(a,b);
+    {a,b}= {a,b}
+    
     /*
     PROBLEM 5 (DEBUGGING): The code below is supposed to print the first int and restOfInts to the console.
     However, it is not working.  Please fix the code so that it works as intended.
