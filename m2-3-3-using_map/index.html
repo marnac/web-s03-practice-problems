@@ -10,18 +10,24 @@
     PROBLEM 1: Create a new array with the .map array method using the numbers array that has double the value of each number and log the results in the console.
     */
     //ENTER YOUR CODE HERE
-
+    doubleNumbers= numbers.map(num=>num*2)
+    console.log(doubleNumbers);
+    
     /*
     PROBLEM 2: Create a new array with the .map array method using the numbers array with the value of each number divided in half and log the results in the console.
     */
     //ENTER YOUR CODE HERE
-
+    hafNumbers=numbers.map(num=>num/2)
+    console.log(hafNumbers);
+    
     /*
    PROBLEM 3: Create a new array with the .map array method using the strings array with only the first character in each string and log the results in the console.
    */
     const strings = ['apple', 'chocolate', 'cherry', 'pecan']
     //ENTER YOUR CODE HERE
-
+    firstString=strings.map(str=> str[0])
+    console.log(firstString);
+    
     /*
     PROBLEM 4: Create a new array with the .map array method using the strings array with only the last character in each string and log the results in the console.
     */
@@ -34,6 +40,31 @@
     // string = string + 'pie'
     // })
     // console.log(pieArray)
+
+    const students = [
+  { name: 'Alice', grade: 85 },
+  { name: 'Bob', grade: 92 },
+  { name: 'Charlie', grade: 78 },
+  { name: 'David', grade: 64 }
+];
+
+    studentGrade =students.map(stu=>{
+     const {name, grade}=stu
+      if(stu >= 90){
+        return `Student ${name} has a good grade.`
+        }
+      else if(stu >= 80){
+        return `Student ${name} has an excelent grade `
+        }
+        else if(stu >= 70){
+        return `Student ${name} has an average grade.`
+        }
+        else{
+        return `Student ${name} needs improvement.`
+        }
+    })
+    console.log(studentGrade.join("\n"))
+    
   </script>
 
 </body>
